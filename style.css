@@ -1,0 +1,384 @@
+body{
+
+    font-family:'Cormorant Garamond',serif;
+    background:#f8f3eb;
+}
+
+/* Navbar */
+
+.custom-nav{
+
+    background:white;
+    margin:20px auto;
+    width:90%;
+    border-radius:50px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+}
+
+.navbar-brand{
+
+    font-family:'Great Vibes',cursive;
+    font-size:2rem;
+
+}
+
+/* Hero */
+
+.hero{
+
+    height:100vh;
+
+    background:linear-gradient(rgba(0,0,0,.45),
+    rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1600&auto=format&fit=crop")
+    center/cover;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:white;
+
+}
+
+.hero h1{
+
+    font-family:'Great Vibes',cursive;
+    font-size:6rem;
+
+}
+
+.hero span{
+
+    color:#d8b36a;
+
+}
+
+.welcome{
+
+    letter-spacing:4px;
+    font-size:18px;
+
+}
+
+.date{
+
+    font-size:28px;
+
+}
+/* Countdown */
+
+.countdown{
+
+    background:#f7f1e8;
+
+}
+
+.section-title{
+
+    font-size:3rem;
+    font-weight:600;
+
+}
+
+.time-box{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.time-box h1{
+
+    font-size:3rem;
+
+    color:#b68c45;
+
+    margin-bottom:10px;
+
+}
+
+.time-box p{
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+/* =========================
+   Story Timeline
+========================= */
+
+.story{
+
+    background:#fffaf3;
+
+}
+
+.timeline{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    width:4px;
+
+    background:#d4b06a;
+
+    top:0;
+
+    bottom:0;
+
+    transform:translateX(-50%);
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    width:50%;
+
+    padding:20px 40px;
+
+}
+
+.timeline-item.left{
+
+    left:0;
+
+}
+
+.timeline-item.right{
+
+    left:50%;
+
+}
+
+.timeline-content{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.timeline-content h4{
+
+    color:#b68c45;
+
+    margin-bottom:15px;
+
+}
+@media (max-width:768px){
+
+.timeline::before{
+
+    left:20px;
+
+}
+
+.timeline-item{
+
+    width:100%;
+
+    left:0 !important;
+
+    padding-left:60px;
+
+    padding-right:10px;
+
+}
+
+}
+/* =========================
+   Wedding Events
+========================= */
+
+.events{
+
+    background:#f7f1e8;
+
+}
+
+.event-card{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.event-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.event-card .icon{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
+.event-card h3{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:3rem;
+
+    color:#b68c45;
+
+}
+
+.event-card p{
+
+    margin:10px 0;
+
+}
+/* ======================
+   Gallery
+====================== */
+
+.gallery{
+
+    background:#fffaf3;
+
+}
+
+.gallery-image{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+.gallery-image:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================
+   RSVP
+========================== */
+
+.rsvp{
+
+    background:#f7f1e8;
+
+}
+
+.rsvp form{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.form-control,
+.form-select{
+
+    padding:15px;
+
+    border-radius:12px;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#b68c45;
+
+    box-shadow:0 0 10px rgba(182,140,69,.3);
+
+}
+/* ==========================
+   Music Button
+========================== */
+
+.music-btn{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:60px;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#b68c45;
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+    z-index:999;
+
+    transition:.3s;
+
+}
+
+.music-btn:hover{
+
+    transform:scale(1.1);
+
+}
